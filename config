@@ -249,6 +249,9 @@ mode "$mode_gaps_outer" {
         bindsym Escape mode "default"
 }
 
+# Dmenu 
+bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -b -fn 'pango hack -12'"
+
 bindsym $mod+z exec rofi -show run -lines 20 -eh 1.3 -opacity "85" -bw 0 -font "System San Francisco Display 10"
 
 exec_always feh --bg-fill /home//ic/Downloads/33.png 
